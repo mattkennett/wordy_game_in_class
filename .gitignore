@@ -6,4 +6,4 @@
 *.pyc
 *.DS_Store
 
-wordy_game_app/migrations
+**/migrations

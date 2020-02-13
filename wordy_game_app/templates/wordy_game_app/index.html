@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>Hello World!</h1>
+
+{% if error %}
+    <h2>ERROR! {{ error }}</h2>
+{% elif input_from_user %}
+    <p>
+    This is what you put in the text box: {{ input_from_user }}
+    </p>
+{% else %}
+    <form method="POST" action="{{ request.path }}">
+    {% csrf_token %}
+    <label for="user_input">Some Input:</label>
+    <input type="text" id="user_input" name="user_form_input" />
+    <br />
+    <input type="submit" value="Send It!" />
+</form>
+{% endif %}
+
+</body>
+</html>
