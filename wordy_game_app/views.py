@@ -5,6 +5,9 @@ import wordy_game_app.models as wordy_models
 
 
 class Index(View):
+    '''
+      This is how Matt wants us to comment!
+    '''
     def get(self, request, *args, **kwargs):
         return render(request, 'wordy_game_app/index.html')
 
