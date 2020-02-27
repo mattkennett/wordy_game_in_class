@@ -120,4 +120,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+# STATIC_URL is the path that will be used in our URLs to point to static assets
 STATIC_URL = '/static/'
+# STATICFILES_DIRS is the list of directories on our server that will be used to store static files
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'wordy_game_app', 'static')
+]
