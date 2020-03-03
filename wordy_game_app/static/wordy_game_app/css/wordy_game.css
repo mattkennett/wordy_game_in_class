@@ -82,7 +82,7 @@ div.nav_links ul div.login {
     display: inline;
 }
 
-div.nav_links ul li input.login_input {
+input.form_text_input {
     padding: 1px 0 1px 6px;
     margin: 0;
 
@@ -93,7 +93,7 @@ div.nav_links ul li input.login_input {
     font-size: 0.9rem;
 }
 
-div.nav_links ul li input.login_button {
+input.form_button {
     padding: 3px;
     margin: 0;
 
@@ -106,6 +106,10 @@ div.nav_links ul li input.login_button {
     font-size: 0.9rem;
 }
 
+input.button_lg {
+    font-size: 1.4rem;
+}
+
 div.nav_links ul li input.login_button:active {
     border: 1px #f4257e solid;
     border-radius: 5px;
@@ -116,6 +120,8 @@ div.nav_links ul li input.login_button:active {
 
 div.content {
     border: 1px #efefef solid;
+
+    min-height: 600px;
 
     text-align: center;
 }
